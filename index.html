@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Rizaldy</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">    
+    <script src="https://kit.fontawesome.com/6ab78df9aa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">Ri<span>zaldy</span></h1>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hello, I am</p>
+                <h1><span>Rizaldy</span> Iman Putra</h1>
+                <h3>Aerospace Engineer | Soon to be Web Developer</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- about section  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/images/about.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a final year Aerospace Engineering Student at Bandung Institute of Technology.
+                        Currently working on my final research about social distancing monitoring at airport terminal using Artificial Intelligence.
+                        Took a bootcamp at Purwadhika Digital School to pursue my dream to become
+                        web developer.
+                    </p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Computer Vision</span><br>Create AI based system for Computer Vision</li>
+                            <li><span>Web Development</span><br>HTML and CSS based web development</li>
+                            <li><span>Language</span><br>Indonesian (Native), English (IELTS band: 5.5), Japanese (JLPT N4)</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Web Development Bootcamp at Purwadhika Digital School</li>
+                            <li><span>2020</span><br>Internsip as Network Planner and Management Engineer at PT. Citilink Indonesia</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017 - Current</span><br>Aerospace Engineering, Bandung Institute of Technology</li>
+                            <li><span>2014 - 2017</span><br>Dwiwarna Boarding High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portofolio section  -->
+    <div id="portofolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/images/Bright-Science-SDMS-Banner-Thumbnail-EN.jpg" alt="computer-vision">
+                    <div class="layer">
+                        <h3>Social Distancing Monitoring</h3>
+                        <p>A system that monitor social distancing in order to slow down COVID-19 infection rate</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/Screenshot 2023-06-06 232819.png" alt="computer-vision">
+                    <div class="layer">
+                        <h3>Airline Web Page</h3>
+                        <p>An airline web for booking flight ticket</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact section  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href="mailto:banggedung@gmail.com"><i class="fa-solid fa-envelope"></i>banggedung@gmail.com</a></p>
+                    <p><i class="fa-brands fa-square-whatsapp"></i>+62-812-3456-7890</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/rizaldyip10" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/ItsRizaldy" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/in/rizaldy-iman-putra-a17b0317a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/rizaldyip10" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="assets/CV Rizaldy Iman Putra.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
