@@ -33,9 +33,14 @@ nav {
 }
 .logo {
     font-size: 40px;
+    cursor: pointer;
 }
 .logo span {
     color: #466D1d;
+}
+.logo a {
+    text-decoration: none;
+    color: whitesmoke;
 }
 nav ul li {
     display: inline-block;
